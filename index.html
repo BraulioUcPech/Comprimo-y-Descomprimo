@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compresor y Descompresor de Archivos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Compresor y Descompresor de Archivos</h1>
+
+      <div class="upload-section">
+        <input type="file" id="fileInput" multiple />
+      </div>
+
+      <div class="action-buttons">
+        
+        <button id="compressButton">Comprimir</button>
+        <button id="decompressButton">Descomprimir</button>
+      </div>
+
+      <div id="progressBar" class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <div id="downloadSection" class="download-section">
+        <a id="downloadLink" href="#">Descargar Archivo</a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+  </body>
+</html>
